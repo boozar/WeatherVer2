@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutHome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_clods"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageWeatherToday"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloud1" />
+
+    <ImageView
+        android:id="@+id/imageWeatherTomorrow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageWeatherToday"
+        app:srcCompat="@drawable/cloud1" />
+
+    <ImageView
+        android:id="@+id/imageWeatherAfterTomorrow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageWeatherTomorrow"
+        app:srcCompat="@drawable/cloud1" />
+
+    <ImageView
+        android:id="@+id/imageRoseToday"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textToday"
+        app:layout_constraintEnd_toEndOf="@+id/textToday"
+        app:srcCompat="@drawable/ruse1" />
+
+    <ImageView
+        android:id="@+id/imageRoseTomorrow"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textTomorrow"
+        app:layout_constraintEnd_toEndOf="@+id/textTomorrow"
+        app:srcCompat="@drawable/ruse1" />
+
+    <ImageView
+        android:id="@+id/imageRoseAftertomorrow"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textAfterTomorrow"
+        app:layout_constraintEnd_toEndOf="@+id/textAfterTomorrow"
+        app:srcCompat="@drawable/ruse1" />
+
+    <ImageView
+        android:id="@+id/imageArrowToday"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRoseToday"
+        app:layout_constraintEnd_toEndOf="@+id/imageRoseToday"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/imageArrowTomorrow"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRoseTomorrow"
+        app:layout_constraintEnd_toEndOf="@+id/imageRoseTomorrow"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/imageArrowAfterTomorrow"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRoseAftertomorrow"
+        app:layout_constraintEnd_toEndOf="@+id/imageRoseAftertomorrow"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textToday"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="To Day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageWeatherToday"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTomorrow"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Tomorrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageWeatherTomorrow"
+        app:layout_constraintTop_toBottomOf="@+id/textToday" />
+
+    <TextView
+        android:id="@+id/textAfterTomorrow"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="After tomorrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageWeatherAfterTomorrow"
+        app:layout_constraintTop_toBottomOf="@+id/textTomorrow" />
+
+</android.support.constraint.ConstraintLayout>
